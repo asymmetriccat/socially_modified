@@ -1,0 +1,14 @@
+<md-input-container >
+   <div>
+                <form >
+                    <textarea ng-model="userComments.comments" placeholder="Your Comment" style='width:700px'></textarea>
+                    <button ng-click='userComments.submit();' style='margin-top:10px;'>Post Comment</button>
+ 
+                    <h4>Comments</h4>
+                    <ul>
+                        <li ng-repeat="comnt in userComments.comments"> {{ comnt.message }} </li>
+                    </ul>
+                </form> 
+        </div>
+                  
+</md-input-container> 
